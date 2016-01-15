@@ -7,18 +7,21 @@
 	
 	https://www.youtube.com/watch?v=GCBROgPCox0
 
-	opend GitBash terminal
+	View at clayswack.github.io
+
+	open GitBash terminal
 
 	To open a GitHub repository on the computer:
 	git init (only needs to be done once for a master folder-all subfolders will be included automatically)
+	(You can tell if the folder has already been initialized by displaying hidden folders - if there is a hidden .git file then it has already been initialized)
 
 	To change the index.html or upload another file:
 	change directory to wherever you want to put the file:
 	ex: cd Documents/GitHub/clayswack.github.io/images
 
-	To go up (get out of the subdirectory) ...use this to replace the old index.html file
+	To go up (get out of the subdirectory)
 	cd ../
-
+ 
 	To show what is in the current folder
 	ls
 
@@ -39,8 +42,12 @@
 	To view the webpage:
 	http://clayswack.github.io/
 
+	To get the contact form to work, see:
+	http://formspree.io/
 
-	
+	webpage available at clayswackhamer.com (hosted by GitHub, redirected there by Weebly)
+
+	To get it to redirect to clayswackhamer.com, add a new file to the same folder as index.html, called "CNAME" and in it include the text "clayswackhamer.com" 
 -->
 <html>
 	<head>
@@ -75,7 +82,7 @@
 						<header class="major">
 							<h2>Who I am</h2>
 						</header>
-						<p> I am a Biological Engineering student at Penn State University. I enjoy science. And college football.</p>
+						<p> I am a Biological Engineering intern at LignoLink, INC. I enjoy science. And college football.</p>
 						<h3></h3>
 						<h3></h3>
 						<h3></h3>
@@ -94,7 +101,7 @@
 					<span class="image fit primary"><img src="images/cells1.JPG" alt="" /></span>
 					<div class="content">
 						<header class="major">
-							<h2>Stuff I do</h2>
+							<h2>My Interests</h2>
 						</header>
 						<p>My interests are at the intersection of technology, engineering, and business. As an undergrad at Penn State I got to work on some cool projects.</p>
 						<ul class="icons-grid">
@@ -119,21 +126,32 @@
 					<a href="#three" class="goto-next scrolly">Next</a>
 				</div>
 			</section>
-
 		<!-- Three -->
 			<section id="three" class="main special">
 				<div class="container">
 					<span class="image fit primary"><img src="images/landscape2.jpe" alt="" /></span>
 					<div class="content">
 						<header class="major">
-							<h2>One more thing</h2>
+							<h2>International Experience</h2>
 						</header>
-						<p>I studied for a semester at the University of Alicante in Spain and took four classes taught entirely in Spanish. This helped me to get a global perspective. It also helped me to become more curious. I love travel. I love languages. I always want to see what is over the next hill. </p>
+						<p>I studied for a semester at the University of Alicante in Spain and took four classes taught entirely in Spanish. This helped me to get a global perspective. It also helped me to become more curious. I love travel. I love languages. I always want to see what is over the next hill.</p>
+					</div>
+					<a href="#four" class="goto-next scrolly">Next</a>
+				</div>
+			</section>
+		<!-- Four -->
+			<section id="four" class="main special">
+				<div class="container">
+					<span class="image fit primary"><img src="images/hardened_poplar_2.jpg" alt="" /></span>
+					<div class="content">
+						<header class="major">
+							<h2>Industry Experience</h2>
+						</header>
+						<p>Over the summer of 2015 I interned with McCormick, where I learned how engineering is applied to industrial food process. Now I am an engineering intern at LignoLink, an agricultural biotechnology startup at Innovation Park, PA.</p>
 					</div>
 					<a href="#footer" class="goto-next scrolly">Next</a>
 				</div>
 			</section>
-
 		<!-- Four -->
 		<!--
 			<section id="four" class="main">
@@ -463,7 +481,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 					<header class="major">
 						<h2>Get in touch</h2>
 					</header>
-					<form method="post" action="#">
+					<form method="post" action="//formspree.io/swackhamerclay@gmail.com">
 						<div class="row uniform">
 							<div class="6u 12u$(xsmall)"><input type="text" name="name" id="name" placeholder="Name" /></div>
 							<div class="6u$ 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Email" /></div>
@@ -478,14 +496,12 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 				</div>
 				<footer>
 					<ul class="icons">
-						<li><a href="#" class="icon alt fa-linkedin"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
-						<li><a href="#" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="#" class="icon alt fa-dribbble"><span class="label">Dribbble</span></a></li>
-						<li><a href="#" class="icon alt fa-envelope"><span class="label">Email</span></a></li>
+						<li><a href="https://www.linkedin.com/profile/view?id=373057184&trk=nav_responsive_tab_profile_pic" class="icon alt fa-linkedin"><span class="label">Linkedin</span></a></li>
+						<li><a href="https://github.com/clayswack" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
+						<li><a href="https://plus.google.com/u/0/108197727700365726565" class="icon alt fa-google-plus"><span class="label">Google +</span></a></li>
 					</ul>
 					<ul class="copyright">
-						<li>&copy; Clay Swackhamer</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li><li>Demo Images: <a href="http://unsplash.com">Unsplash</a></li>
+						<li>&copy; Clay Swackhamer 2016</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li><li>Demo Images: <a href="http://unsplash.com">Unsplash</a></li><li>Hosting: <a href="http://github.com">GitHub</a></li>
 					</ul>
 				</footer>
 			</section>

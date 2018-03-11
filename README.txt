@@ -14,5 +14,5 @@ Misc:
 	swackhamerclay at gmail.com
 
 Update 20171110:
-	On average, three bots with Russian IPs visit this website for every human.
-	Thanks for keeping it real, comrade.
+	On average, four bots with Russian IPs visit this website for every human.
+	Thanks for being real, comrade.

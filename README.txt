@@ -9,7 +9,7 @@ Attributions:
 	Icons: fortawesome.github.com/Font-Awesome
 	
 Misc:
-	Comments? Suggestions? Wise remarks?
+	Comments? Suggestions?
 	Drop me a line at
 	swackhamerclay at gmail.com
 

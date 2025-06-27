@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clay Swackhamer personal website</title>
+
+  <!-- Font Awesome via CDN (needs internet and a local server to work reliably) -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-K2Y1IEKOG20uv7x9YfY5g+nUGg6ulA2S3YbWhXOPPv0FnKqwnzSrxUMJAFBPZhZvlh7hqOXMQKIkBG90+pRk5g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 2rem;
+      font-family: sans-serif;
+      line-height: 1.6;
+      background: #fdfdfd;
+      color: #222;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      max-width: 800px;
+      margin: 0 auto 3rem auto;
+    }
+
+    .profile-pic {
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+      <!--border: 2px solid #ccc;-->
+    }
+
+    .header-content {
+      flex: 1;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin: 0.25rem 0;
+    }
+
+    .tagline {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .tagline a {
+      text-decoration: none;
+      color: #666;
+      font-size: 1.1rem;
+    }
+
+    .tagline a:hover {
+      color: #000;
+    }
+
+    nav a {
+      margin-right: 1rem;
+      text-decoration: none;
+      color: #555;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      max-width: 800px;
+      margin: 2rem auto;
+    }
+
+    .project {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .project img {
+      width: 400px;
+      height: 250px;
+      object-fit: contain;
+      background: #FFFFFF;
+    }
+
+    .project-description {
+      flex: 1;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #888;
+    }
+
+    @media (max-width: 600px) {
+      header,
+      .project {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .profile-pic,
+      .project img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+
+
+<body>
+  <header>
+    <img
+      src="pics/oswego_drum.jpg"
+      alt="Profile picture"
+      class="profile-pic"
+    />
+    <div class="header-content">
+      <h1>Clay Swackhamer</h1>
+      <p class="tagline">
+        Researcher at Oregon State
+          <a href="https://orcid.org/0000-0001-8155-0642"> <i class="ai ai-orcid ai-1x"></i> </a>
+          <a href="https://scholar.google.com/citations?user=bv2KWioAAAAJ&hl=en">  <i class="ai ai-google-scholar ai-1x"></i> </a>
+      </p>
+      <p>
+          <a href="https://clayswackhamer.com/projects/clay_swackhamer_cv.pdf">  CV </a>
+      </p>
+      <nav>
+        <a href="#research">Research</a>
+        <a href="#other-projects">Other Projects</a>
+        <a href="#misc">Miscellaneous</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Bio without heading -->
+  <section>
+    <p>I'm a researcher in the Dallas lab at Oregon State studying the effect of milk processing on health using in vitro digestion systems like <a href = "https://prodigest.eu/technology/shime/"> SHIME</a>. I'm interested in how digestion affects the gut microbiome, and in particular how mathematical modeling can be used to understand the <a href = "https://cdn.nutrition.org/article/S2475-2991(25)02636-8/fulltext"> dynamics</a> of the gut microbial community to design better prebiotics or probiotics.
+    </p>
+    <p>
+      <li> Research Associate at Oregon State in the lab of <a href = "https://health.oregonstate.edu/research/dallas-lab"> Dr. Dave Dallas</a></li>
+      <li> Postdoc (USDA-NIFA fellowship, 2022-2024) at Purdue in the lab of <a href = "https://ag.purdue.edu/whistlercenter/index.html"> Dr. Bruce Hamaker</a></li>
+      <li> PhD (2022) from UC Davis in Biological Systems Engineering in the lab of <a href = "https://faculty.engineering.ucdavis.edu/bornhorst/"> Dr. Gail Bornhorst</a> </li>
+      <li> BS (2015) from Penn State in Biological and Agricultural Engineering </li>
+      <li> PE (Agricultural Engineer) </li>
+    </p>
+  </section>
+
+  <section id="research">
+    <h2>Research</h2>
+
+    <div class="project">
+      2025
+      <a href="https://www.sciencedirect.com/science/article/pii/S0268005X25005405" target="_blank">
+        <img src="pics/fracture_model_foods.jpg" alt="Fracture props of model foods" loading="lazy" />
+      </a>
+      <div class="project-description">
+        <strong>→ Foods break down by different mechanisms depending on their fracture properties</strong>
+        <p><b>C. Swackhamer</b>, R. Doan, Y. Lu, N. Nitin, G. M. Bornhorst. “Fracture and rheological properties of standardized, model solid foods influence their breakdown mechanisms during in vitro gastric digestion with simulated peristalsis.” 2025. Food Hydrocolloids. 111580. <a href="https://doi.org/10.1016/j.foodhyd.2025.111580">10.1016/j.foodhyd.2025.111580 </a> </p>
+      </div>
+    </div>
+
+
+    <div class="project">
+      2025
+      <a href="https://www.nature.com/articles/s41430-025-01632-y" target="_blank">
+        <img src="pics/cisse_graphical_abstract.jpg" alt="Digestion of porridges" loading="lazy" />
+      </a>
+      <div class="project-description">
+        <strong>→ Stunted and healthy toddlers can both digest and obtain energy from thick sorghum porridge </strong>
+        <p> F. Cisse, <b>C. Swackhamer</b>, H. Diall, A. Rahmanifar, M. Sylla, A.R. Opekun, M.A. Grusak, A. H-M. Lin, E.A. Pletsch, A. M.R. Hayes, R. Quezado-Calvillo, B.L. Nichols, B. R. Hamaker, “Stunted African toddlers digest and obtain energy from energy-dense thick sorghum porridge.” 2025. European Journal of Clinical Nutrition. <a href = "https://doi.org/10.1038/s41430-025-01632-y"> 10.1038/s41430-025-01632-y</a> </p>
+      </div>
+    </div>
+
+
+    <div class="project">
+      2025
+      <a href="https://www.nature.com/articles/s41430-025-01632-y" target="_blank">
+        <img src="pics/MFF_graphical_abstract.jpg" alt="Metabolic flexibility" loading="lazy" />
+      </a>
+      <div class="project-description">
+        <strong>→ Slowly digestible carbohydrates enhance metabolic flexiblity in mice </strong>
+        <p> A. Hayes, <b>C. Swackhamer</b>, R. Quezado-Calvillo, N.F. Butte, E.E. Sterchi, B.L. Nichols, B.R. Hamaker “Moderating carbohydrate digestion rate in mice promotes fat oxidation and metabolic flexibility revealed through a new approach to assess metabolic substrate utilization.” 2025. European Journal of Nutrition. <a href = "https://doi.org/10.1007/s00394-025-03585-1"> 10.1007/s00394-025-03585-1 </a> </p>
+      </div>
+    </div>
+
+
+    <div class="project">
+      2023
+      <a href="https://www.sciencedirect.com/science/article/pii/S0963996923004222" target="_blank">
+        <img src="pics/PSS_graphical_abstract.jpg" alt="Peristaltic Simulator" loading="lazy" />
+      </a>
+      <div class="project-description">
+        <strong>→ We built a device to isolate the effect of peristalsis on a piece of food during digestion </strong>
+        <p> <b> C. Swackhamer</b>, T. Bedane, S. Keppler, A. Poltorak, K. Cheung, N. Awais, F. Marra, G. Bornhorst, “Development and Analysis of a Multi-Module Peristaltic Simulator for Gastrointestinal Research." 2023. Food Research International. 112877. <a href = "https://doi.org/10.1016/j.foodres.2023.112877"> 10.1016/j.foodres.2023.112877 </a> </p>
+      </div>
+    </div>
+
+
+    <div class="project">
+      2022
+      <a href="https://www.sciencedirect.com/science/article/pii/S0260877421003538" target="_blank">
+        <img src="pics/model_foods_graphical_abstract.jpg" alt="FBCS model foods" loading="lazy" />
+      </a>
+      <div class="project-description">
+        <strong>→ We created model foods with very different breakdown rates but minimal differences in formulation </strong>
+        <p> <b> C. Swackhamer</b>, R. Doan, G. Bornhorst, “Development and characterization of standardized model, solid foods with varying breakdown rates during gastric digestion." 2022. Journal of Food Engineering. 316:110827. <a href = "https://doi.org/10.1016/j.jfoodeng.2021.110827"> 10.1016/j.jfoodeng.2021.110827</a> </p>
+      </div>
+    </div>
+
+
+    <div class="project">
+      2021
+      <a href="https://www.sciencedirect.com/science/article/pii/S2667025921000194" target="_blank">
+        <img src="pics/yamile_graphical_abstract.jpg" alt="Gastric secretion rate" loading="lazy" />
+      </a>
+      <div class="project-description">
+        <strong>→ Dynamic gastric secretion rates in the Human Gastric Simulator affect protein hydrolysis </strong>
+        <p> Y. Mennah-Govela, <b>C. Swackhamer</b>, G. Bornhorst, “Gastric secretion rate and protein concentration impact intragastric pH and protein hydrolysis during dynamic in vitro gastric digestion." 2020. Food Hydrocolloids for Health. <a href= "https://doi.org/10.1016/j.fhfh.2021.100027"> 10.1016/j.fhfh.2021.100027</a> </p>
+      </div>
+    </div>
+
+
+    <div class="project">
+      2021
+      <a href="https://pubs.rsc.org/en/content/articlehtml/2020/fo/c9fo01461f" target="_blank">
+        <img src="pics/couscous_graphical_abstract.jpg" alt="Couscous digestion" loading="lazy" />
+      </a>
+      <div class="project-description">
+        <strong>→ Slow gastric emptying of couscous is likely due to slow starch digestion, not slow particle breakdown </strong>
+        <p>A. Hayes, <b> C. Swackhamer</b>, Y. Mennah-Govela, M. Martínez, A. Diatta, G. Bornhorst. B. Hamaker. “Pearl millet <i>(Pennisetum glaucum)</i> couscous breaks down faster than wheat couscous in the Human Gastric Simulator, though has slower starch hydrolysis." 2020. Food & Function. 11: 111-122. <a href="https://doi.org/10.1039/C9FO01461F"> 10.1039/C9FO01461F</a> </p>
+      </div>
+    </div>
+
+
+    <div class="project">
+      2021
+      <a href="https://peer.asee.org/emergency-transition-of-intro-communication-and-design-course-to-remote-teaching" target="_blank">
+        <img src="pics/eng3_graphical_abstract.jpg" alt="Teaching" loading="lazy" />
+      </a>
+      <div class="project-description">
+        <strong>→ Remote teaching of engineering design using Arduino is possible! </strong>
+        <p><b>C. Swackhamer</b>, J. Mullin, “Emergency Transition of Intro Communication and Design Course to Remote Teaching." 2021. American Society of Engineering Education Conference. <a href= "https://doi.org/10.18260/1-2--37025"> 10.18260/1-2--37025 </a></p>
+      </div>
+    </div>
+
+
+    <div class="project">
+      2019
+      <a href="https://pubs.rsc.org/en/content/articlelanding/2019/fo/c9fo00789j" target="_blank">
+        <img src="pics/almond_graphical_abstract.jpg" alt="Almond digestion" loading="lazy" />
+      </a>
+      <div class="project-description">
+        <strong>→ Peristalsis is necessary to break down almond particles during in vitro digestion </strong>
+        <p><b>C. Swackhamer</b>, Z. Zhang, A. Taha, G. Bornhorst. “Fatty acid bioaccessibility and structural breakdown from in vitro digestion of almond particles." 2019. Food & Function. 10: 5174-5187. <a href="https://doi.org/10.1039/C9FO00789J"> 10.1039/C9FO00789J</a></p>
+      </div>
+    </div>
+
+
+    <div class="project">
+      2019
+      <a href="https://www.sciencedirect.com/science/article/pii/S0260877419302730" target="_blank">
+        <img src="pics/fracture_props.jpg" alt="Almond digestion" loading="lazy" />
+      </a>
+      <div class="project-description">
+        <strong>→ Fracture properties of foods influence their breakdown during chewing </strong>
+        <p><b>C. Swackhamer</b>, G. Bornhorst. “Fracture properties of foods: Experimental considerations and applications to mastication." 2019. Journal of Food Engineering. 263: 213-226. <a href="https://doi.org/10.1016/j.jfoodeng.2019.07.002"> 10.1016/j.jfoodeng.2019.07.002</a></p>
+      </div>
+    </div>
+
+  </section>
+
+
+
+
+
+  <section id="other-projects">
+
+    <h2>Other Projects</h2>
+
+    <div class="project">
+      2017
+      <a href="https://clayswackhamer.com/projects/greens_fun.pdf" target="_blank">
+        <img src="pics/pie_graphical_abstract.jpg" alt="Undergrad thesis" loading="lazy" />
+      </a>
+      <div class="project-description">
+        <strong>→ World's simplest method to see how long it takes to cool a slice of pie </strong>
+        <p><b>C. Swackhamer</b> Math <a href="https://clayswackhamer.com/projects/greens_fun.pdf"> project </a> in math course at UC Davis </p>
+      </div>
+    </div>
+
+    <div class="project">
+      2015
+      <a href="https://clayswackhamer.com/projects/Swackhamer_Clay_Effect_of_Codon_Optimization_on_Bacterial_Translation_Elongation_Rates.pdf" target="_blank">
+        <img src="pics/undergrad_thesis_graphical_abstract.jpg" alt="Undergrad thesis" loading="lazy" />
+      </a>
+      <div class="project-description">
+        <strong>→ Codon optimization of a green fluorescent protein can modulate translation elongation rate </strong>
+        <p><b>C. Swackhamer</b> Undergrad <a href="https://clayswackhamer.com/projects/Swackhamer_Clay_Effect_of_Codon_Optimization_on_Bacterial_Translation_Elongation_Rates.pdf"> thesis </a> in the Shreyer Honors College at Penn State </p>
+      </div>
+    </div>
+
+
+  </section>
+
+  <section id="misc">
+    <h2>Miscellaneous</h2>
+    <p><i>"...it would appear to be a pointless and doubtful exercise to examine and disentangle the apparently random appearing bacteria in normal feces and the intestinal tract, a situation that seems controlled by a thousand coincidences... Yet I have nevertheless devoted myself now for a year virtually exclusively to this special study, it was with the conviction that the accurate knowledge of these conditions is essential, for the understanding of not only the physiology of digestion..., but also the pathology and therapy of microbial intestinal diseases."</i> <br> <br> - Theodor Escherich (1888)
+</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>swackhac [at] oregonstate.edu</p>
+  </section>
+
+
+</body>
+</html>
